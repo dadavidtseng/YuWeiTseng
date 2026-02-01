@@ -1,4 +1,13 @@
 /.idea/
+/YuWeiTseng/obj/
+
+## C# / .NET build artifacts:
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.csproj.user
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
