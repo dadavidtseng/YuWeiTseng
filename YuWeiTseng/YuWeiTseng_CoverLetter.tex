@@ -10,6 +10,7 @@
 
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 \newcommand{\Hrule}{\rule{\linewidth}{0.3mm}}
+\pagestyle{empty}
 
 \makeatletter% since there's an at-sign (@) in the command name
 \renewcommand{\@maketitle}{%
@@ -24,48 +25,41 @@
 
 \title{Cover Letter}
 \author{Yu-Wei Tseng}
-\date{Application for Senior AI Programmer (R25952)}
+\date{Application for Software Engineer, BigQuery Agentic AI}
 
 \begin{document}
     \maketitle% prints the title block
+    \thispagestyle{empty}
     \noindent
     \\
-    Dear Hiring Manager,
+    Dear Hiring Team,
     \\
     \\
-    I am writing to express my strong interest in the \textbf{Senior AI Programmer position (R25952)} within Epic Games' Unreal Engine team. As a passionate game developer with a unique architectural design background, I am excited to contribute to the next generation of AI toolsets that empower content creators worldwide.
+    I am writing to express my interest in the \textbf{Software Engineer position on the BigQuery Agentic AI team} at Google. The vision of bringing agentic capabilities to BigQuery --- enabling AI to reason over data, orchestrate tools, and act autonomously within a query engine --- aligns directly with the systems I have been building over the past year.
     \\
     \\
-    \textbf{Technical Expertise \& Unique Background}
+    \textbf{Agentic Systems Experience}
     \\
     \\
-    My interdisciplinary background in architecture provides a distinctive perspective on spatial reasoning and systematic design that directly translates to AI navigation systems and pathfinding algorithms. Combined with my passion for game development, this positions me to bring innovative solutions to Unreal Engine's AI framework.
+    My most relevant project is \textbf{AGENTS}, a distributed multi-agent orchestration platform I architected across five languages: C++, TypeScript, Python, Rust, and Go. The system uses a quest-based workflow where an orchestration agent (agent-producer) decomposes high-level goals into executable tasks, assigns them to specialized worker agents running in isolated git worktrees for conflict-free parallel execution, and verifies completion through LLM-based evaluation with human approval gates. I built a 34-tool MCP server for quest and task management, implemented dual-layer memory (local JSON for short-term, ArcadeDB graph database for long-term context and relationship tracking), and designed shadow agents for monitoring and automatic rollback. The platform includes a React + Express dashboard with WebSocket-based real-time updates and Slack/Discord notification pipelines. This gave me direct experience with the core challenges of agentic systems at scale: task decomposition, tool routing, state persistence, fault tolerance, and multi-language interoperability.
     \\
     \\
-    \textbf{Key Qualifications:}
-    \\
-    • Extensive \textbf{C++} programming experience with strong software engineering principles\\
-    • Deep understanding of navigation and pathfinding systems, including \textbf{Recast} integration\\
-    • Proven track record developing robust, extensible AI systems for AAA-quality projects\\
-    • Strong knowledge of engine tooling pipelines and performance optimization
+    \textbf{Distributed Systems \& Infrastructure}
     \\
     \\
-    \textbf{Vision for Impact at Epic}
+    My custom C++ game engine (Daemon Engine) features a multithreaded JobSystem with generic and I/O worker pools using bitfield-based task claiming, a networking subsystem supporting TCP/UDP multiplayer sessions, and an embedded V8 JavaScript runtime for hot-reloadable scripting. Designing these systems under real-time constraints has sharpened my ability to reason about large-scale infrastructure and concurrent workloads.
     \\
     \\
-    I am particularly excited about your team's work bringing AI features to the next generation of Unreal Engine, especially integration with \textbf{SceneGraph} and \textbf{Verse programming language}. My experience bridging different technological paradigms would be valuable in decoupling features from the Actor framework while maintaining performance standards.
+    \textbf{LLM Integration \& Systems Thinking}
     \\
     \\
-    My approach aligns with Epic's philosophy of creating user-focused solutions that enhance creativity, fostering innovation through collaboration, and maintaining quality without compromise. Your company's dedication to empowering content creators resonates with my belief that well-crafted games can drive positive change and create meaningful interactive experiences.
+    I have practical experience integrating LLMs into production systems --- my portfolio site uses the Claude SDK for an AI chatbot, and the AGENTS project uses MCP as the communication protocol between external AI agents and a running game engine over WebSocket. My background in architecture --- a five-year professional degree from National Cheng Kung University --- trained me to think in systems: how components interact, how constraints propagate, and how to design for both immediate function and long-term adaptability. That perspective is especially valuable when designing complex data workflows and agentic pipelines at scale.
     \\
     \\
-    The opportunity to work alongside world-class talent while contributing to tools used by developers globally is incredibly motivating. I am ready to bring my technical skills, creative problem-solving approach, and passion for AI systems to help push the boundaries of real-time entertainment.
+    I will complete my Master's in Software Development at SMU Guildhall in May 2026 and am eager to relocate to Kirkland, WA. I would welcome the opportunity to discuss how my experience with agentic systems, distributed architectures, and LLM integration can contribute to the BigQuery team.
     \\
     \\
-    I would welcome the opportunity to discuss how my unique background and expertise can contribute to Unreal Engine's AI toolset success. I am available for an interview at your convenience and prepared to relocate to Cary for this exciting opportunity.
-    \\
-    \\
-    Thank you for considering my application. I look forward to joining the Epic team and contributing to the future of game development technology.
+    Thank you for your time and consideration.
     \\
     \\
     Sincerely,
